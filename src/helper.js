@@ -1,12 +1,10 @@
-const admin = require('firebase-admin');
-const serviceAccount = require('../moderator-bot-336622-53623ae6a339.json');
+var admin = require("firebase-admin");
 
-console.log(process.env.FIREBASE_DATABASEURL);
-console.log();
+var serviceAccount = require("../moderator-bot-5d0c3-firebase-adminsdk-tnhts-846f85da63.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: process.env.FIREBASE_DATABASEURL
+  databaseURL: "https://moderator-bot-5d0c3-default-rtdb.firebaseio.com"
 });
 
 const db = admin.database();

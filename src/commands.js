@@ -11,7 +11,7 @@ module.exports = function() {
           })
           
           helper.command(message, '!!help', function(){
-            message.channel.send("help msg here")
+            message.author.send("I don't give help. I annoy the Hihi.");
           })
         }
         for (const j of BAD_WORDS) {
